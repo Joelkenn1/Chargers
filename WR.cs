@@ -14,9 +14,9 @@ namespace TestProject1
         public int Touchdowns = 0;
         public int Fumbles = 0;
         public int Fantasy_Points = 0;
-        
-        public WR(int catches, int yards, int yards_after_catch, int touchdowns, int fumbles, int fantasy_Points, string name, int age, int number, int height, int weight, string college)
-        : base(name, age, number, height, weight, college)
+
+        public WR(int catches, int yards, int yards_after_catch, int touchdowns, int fumbles, int fantasy_Points, string name,  string position, int age, int number, string height, int weight, string college)
+        : base(name, position, age, number, height, weight, college)
         {
             this.Catches = catches;
             this.Yards = yards;
@@ -26,7 +26,6 @@ namespace TestProject1
             this.Fantasy_Points = fantasy_Points;
         }
     }
-    
-}
 
+}
 
