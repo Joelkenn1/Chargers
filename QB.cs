@@ -17,8 +17,8 @@ namespace TestProject1
         public decimal QB_rating = 0;
         public int Fantasy_Points = 0;
 
-        public QB(int yards, decimal completionPercentage, int completions, int passingTDs, int rushingTDs, int interceptions_thrown, decimal qB_rating, int fantasy_Points, string name, int age, int number, int height, int weight, int minutesplayed, string college)
-            : base(name, age, number, height, weight, minutesplayed, college)
+        public QB(int yards, decimal completionPercentage, int completions, int passingTDs, int rushingTDs, int interceptions_thrown, decimal qB_rating, int fantasy_Points, string name, int age, int number, int height, int weight, string college)
+            : base(name, age, number, height, weight, college)
         {
             this.Yards = yards;
             this.CompletionPercentage = completionPercentage;
