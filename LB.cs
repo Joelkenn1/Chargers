@@ -17,8 +17,8 @@ namespace TestProject1
         public int Sacks = 0;
         public int Fantasy_Points = 0;
 
-        public LB(int interceptions_caught, int tackels, int tackle_Assists, int defensive_Touchdowns, int fumbles_Caused, int fumble_Recoveries, int sacks, int fantasy_Points, string name, int age, int number, int height, int weight, int minutesplayed, string college)
-          : base(name, age, number, height, weight, minutesplayed, college)
+        public LB(int interceptions_caught, int tackels, int tackle_Assists, int defensive_Touchdowns, int fumbles_Caused, int fumble_Recoveries, int sacks, int fantasy_Points, string name, int age, int number, int height, int weight, string college)
+          : base(name, age, number, height, weight, college)
         {
             this.Interceptions_caught = interceptions_caught;
             this.Tackels = tackels;
@@ -31,4 +31,3 @@ namespace TestProject1
         }
     }
 }
-
