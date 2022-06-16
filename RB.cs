@@ -14,9 +14,9 @@ namespace TestProject1
         public int Receptions = 0;
         public int Fumbles = 0;
         public int Fantasy_Points = 0;
-        
-        public RB(int rushing_attempts, int rushing_yards, int rushing_tds, int receptions, int fumbles, int fantasy_Points, string name, int age, int number, int height, int weight, string college)
-        : base(name, age, number, height, weight, college)
+
+        public RB(int rushing_attempts, int rushing_yards, int rushing_tds, int receptions, int fumbles, int fantasy_Points, string name, string position, int age, int number, string height, int weight, string college)
+        : base(name, position, age, number, height, weight, college)
         {
             this.Rushing_Attempts = rushing_attempts;
             this.Rushing_Yards = rushing_yards;
