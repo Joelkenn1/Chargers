@@ -15,10 +15,10 @@ namespace TestProject1
         public int Sacks = 0;
         public int Fantasy_Points = 0;
 
-    public DT(int tackels, int tackle_Assists, int fumbles_Caused, int fumble_Recoveries, int sacks, int fantasy_Points, string name, int age, int number, int height, int weight, string college)
-        : base(name, age, number, height, weight, college)
+        public DT(int tackels, int tackle_Assists, int fumbles_Caused, int fumble_Recoveries, int sacks, int fantasy_Points, string name, string position, int age, int number, string height, int weight, string college)
+            : base(name, position, age, number, height, weight, college)
         {
-            
+
             this.Tackels = tackels;
             this.Tackle_Assists = tackle_Assists;
             this.Fumbles_Caused = fumbles_Caused;
@@ -26,5 +26,5 @@ namespace TestProject1
             this.Sacks = sacks;
             this.Fantasy_Points = fantasy_Points;
         }
-}
+    }
 }
