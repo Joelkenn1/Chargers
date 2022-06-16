@@ -9,15 +9,17 @@ namespace TestProject1
     public class Player
     {
         public string Name;
+        public string Position;
         public int Age;
         public int Number;
-        public int Height;
+        public string Height;
         public int Weight;
         public string College;
 
-        public Player(string name, int age, int number, int height, int weight, string college)
+        public Player(string name, string position, int age, int number, string height, int weight, string college)
         {
             this.Name = name;
+            this.Position = position;
             this.Age = age;
             this.Number = number;
             this.Height = height;
@@ -26,36 +28,47 @@ namespace TestProject1
         }
         public string Playername
         {
-            get { return Name; } set {Name = value; } 
+            get { return Name; }
+            set { Name = value; }
+        }
+
+        public string PlayerPosition
+        {
+            get { return Position; }
+            set { Position = value; }
         }
 
         public int PlayerAge
         {
-            get { return Age; } set { Age = value; }
+            get { return Age; }
+            set { Age = value; }
         }
 
         public int PlayerNumber
         {
-            get { return Number; } set { Number = value; }
+            get { return Number; }
+            set { Number = value; }
         }
 
-        public int PlayerHeight
+        public string PlayerHeight
         {
-            get { return Height; } set { Height = value; }
+            get { return Height; }
+            set { Height = value; }
         }
 
         public int PlayerWeight
         {
-            get { return Weight; } set { Weight = value; }
+            get { return Weight; }
+            set { Weight = value; }
         }
 
         public string PlayerCollege
         {
-            get { return College; } set { College = value; }
+            get { return College; }
+            set { College = value; }
         }
 
-
-
+       
     }
 
-    }
+}
