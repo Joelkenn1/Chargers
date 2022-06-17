@@ -29,5 +29,33 @@ namespace TestProject1
             this.Sacks = sacks;
             this.Fantasy_Points = fantasy_Points;
         }
+        public int DBInt{
+            get{return Interceptions_Caught;}
+            set{Interceptions_Caught = value;}
+        }
+        public int Tkls{
+            get{return Tackels;}
+            set{Tackels = value;}
+        }
+        public int TklAsst{
+            get{return Tackle_Assists;}
+            set{Tackle_Assists = value;}
+        }
+        public int DefTDs{
+            get{return Defensive_Touchdowns;}
+            set{Defensive_Touchdowns = value;}
+        }
+        public int FumC{
+            get{return Fumbles_Caused;}
+            set{Fumbles_Caused = value;}
+        }
+        public int FumR{
+            get{return Fumble_Recoveries;}
+            set{Fumble_Recoveries = value;}
+        }
+        public int Sks{
+            get{return Sacks;}
+            set{Sacks = value;}
+        }
     }
 }
