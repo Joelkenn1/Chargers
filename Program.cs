@@ -41,7 +41,7 @@ namespace TestProject1
                 Console.WriteLine($"{te1.Playername}({te1.PlayerPosition})");
             }
 
-            TE te2 = new TE(246, 2925, 12, 30, 2, 6, "Hunter Henry", "TE", 27, 86, "6 - 5", 250, "Arkansas");
+            TE te2 = new TE(955, 11841, 12, 116, 8, 9, "Antonio Gates", "TE", 24, 85, "6 - 4", 255, "Kent St.");
             {
                 Console.WriteLine($"{te2.Playername}({te2.PlayerPosition})");
             }
@@ -56,47 +56,47 @@ namespace TestProject1
                 Console.WriteLine($"{wr2.Playername}({wr2.PlayerPosition})");
             }
 
-            CB cb1 = new CB(21, 631, 104, 1, 7, 10, 0, 0, "Quentin Jammer", "CB", 27, 23, "6 - 0", 204, "Texas");
+            CB cb1 = new CB(21, 631, 104, 1, 7, 10, 0, "Quentin Jammer", "CB", 27, 23, "6 - 0", 204, "Texas");
             {
                 Console.WriteLine($"{cb1.Playername}({cb1.PlayerPosition})");
             }
 
-            CB cb2 = new CB(24, 362, 69, 1, 2, 4, 0, 0, "Casey Hayward", "CB", 32, 26, "5 - 11", 192, "Vanderbilt");
+            CB cb2 = new CB(24, 362, 69, 1, 2, 4, 0, "Casey Hayward", "CB", 32, 26, "5 - 11", 192, "Vanderbilt");
             {
                 Console.WriteLine($"{cb2.Playername}({cb2.PlayerPosition})");
             }
 
-            LB lb1 = new LB(18, 1077, 325, 1, 11, 18, 59, 0, "Junior Seau", "LB", 24, 55, "6 - 3", 250, "USC");
+            LB lb1 = new LB(18, 1077, 325, 1, 11, 18, 59,"Junior Seau", "LB", 24, 55, "6 - 3", 250, "USC");
             {
                 Console.WriteLine($"{lb1.Playername}({lb1.PlayerPosition})");
             }
 
-            LB lb2 = new LB(3, 277, 108, 0, 15, 7, 51, 0, "Melvin Ingram", "LB", 32, 54, "6 - 2", 247, "South Carolina");
+            LB lb2 = new LB(3, 277, 108, 0, 15, 7, 51,"Melvin Ingram", "LB", 32, 54, "6 - 2", 247, "South Carolina");
             {
                 Console.WriteLine($"{lb2.Playername}({lb2.PlayerPosition})");
             }
 
-            S s1 = new S(34, 920, 286, 2, 15, 9, 31, 0, "Rodney Harrison", "S", 29, 37, "6 - 1", 220, "Western Illinois");
+            S s1 = new S(34, 920, 286, 2, 15, 9, 31, "Rodney Harrison", "S", 29, 37, "6 - 1", 220, "Western Illinois");
             {
                 Console.WriteLine($"{s1.Playername}({s1.PlayerPosition})");
             }
 
-            S s2 = new S(5, 173, 84, 0, 3, 0, 6, 0, "Derwin James", "S", 25, 33, "6 - 2", 215, "Florida State");
+            S s2 = new S(5, 173, 84, 0, 3, 0, 6,"Derwin James", "S", 25, 33, "6 - 2", 215, "Florida State");
             {
                 Console.WriteLine($"{s2.Playername}({s2.PlayerPosition})");
             }
 
-            DT dt1 = new DT(98, 1, 4, 3, 13, 0, "Jamal Williams", "DT", 29, 76, "6 - 3", 348, "Oklahoma State");
+            DT dt1 = new DT(98, 1, 4, 3, 13,"Jamal Williams", "DT", 29, 76, "6 - 3", 348, "Oklahoma State");
             {
                 Console.WriteLine($"{dt1.Playername}({dt1.PlayerPosition})");
             }
 
-            DE de1 = new DE(78, 0, 13, 3, 58, 0, "Joey Bosa", "DE", 26, 97, "6 - 5", 280, "Ohio");
+            DE de1 = new DE(78, 0, 13, 3, 58,"Joey Bosa", "DE", 26, 97, "6 - 5", 280, "Ohio");
             {
                 Console.WriteLine($"{de1.Playername}({de1.PlayerPosition})");
             }
 
-            DE de2 = new DE(67, 1, 21, 16, 133, 0, "Leslie O'Neal", "DE", 31, 91, "6 - 4", 275, "Oklahoma State");
+            DE de2 = new DE(67, 1, 21, 16, 133,"Leslie O'Neal", "DE", 31, 91, "6 - 4", 275, "Oklahoma State");
             {
                 Console.WriteLine($"{de2.Playername}({de2.PlayerPosition})");
             }
@@ -134,7 +134,7 @@ namespace TestProject1
                     Console.WriteLine($" Name:{te1.Playername}, Position:{te1.PlayerPosition}, Age:{te1.PlayerAge}, Number:{te1.PlayerNumber}, Height: {te1.PlayerHeight}, Weight: {te1.PlayerWeight}, College: {te1.PlayerCollege}");
                      
                 }
-                else if (Question == "About Hunter Henry")
+                else if (Question == "About Antonio Gates")
                 {
                     Console.WriteLine($" Name:{te2.Playername}, Position:{te2.PlayerPosition}, Age:{te2.PlayerAge}, Number:{te2.PlayerNumber}, Height: {te2.PlayerHeight}, Weight: {te2.PlayerWeight}, College: {te2.PlayerCollege}");
                      
@@ -193,7 +193,94 @@ namespace TestProject1
                 {
                     Console.WriteLine($" Name:{de2.Playername}, Position:{de2.PlayerPosition}, Age:{de2.PlayerAge}, Number:{de2.PlayerNumber}, Height: {de2.PlayerHeight}, Weight: {de2.PlayerWeight}, College: {de2.PlayerCollege}");
                 }
-
+                else if (Question == "Justin Herbert Stats")
+                {
+                    Console.WriteLine($" Passing Yards:{qb1.PassYDs}, Completion Percentage:{qb1.CmpPc}, Completions :{qb1.Cmps}, Passing Touchdowns:{qb1.PassTDs}, Rushing Touchdowns: {qb1.QBRushTDS}, Interceptions: {qb1.QBInt}, QB Rating: {qb1.Rating}, Fantasy Points: {qb1.FP}");
+                }
+                else if (Question == "Philip Rivers Stats")
+                {
+                    Console.WriteLine($" Passing Yards:{qb2.PassYDs}, Completion Percentage:{qb2.CmpPc}, Completions :{qb2.Cmps}, Passing Touchdowns:{qb2.PassTDs}, Rushing Touchdowns: {qb2.QBRushTDS}, Interceptions: {qb2.QBInt}, QB Rating: {qb2.Rating}, Fantasy Points: {qb2.FP}");
+                }
+                else if (Question == "LaDainian Tomlinson Stats")
+                {
+                    Console.WriteLine($" Rushing Attempts:{rb1.Rushatt}, Rushing Yards:{rb1.RushYds}, Rushing Touchdowns :{rb1.RushTDs}, Receptions:{rb1.Rec}, Fumbles: {rb1.Fmbs}, Fantasy Points: {rb1.FP}");
+                }
+                else if (Question == "Austin Ekeler Stats")
+                {
+                    Console.WriteLine($" Rushing Attempts:{rb2.Rushatt}, Rushing Yards:{rb2.RushYds}, Rushing Touchdowns :{rb2.RushTDs}, Receptions:{rb2.Rec}, Fumbles: {rb2.Fmbs}, Fantasy Points: {rb2.FP}");
+                }
+                else if (Question == "Kellen Winslow Stats")
+                {
+                    Console.WriteLine($" Receptions:{te1.Rec}, Recieving Yards:{te1.Yds}, Yards after Catch :{te1.YAC}, Touchdowns :{te1.Rec}, Fumbles: {te1.Fmbs}, Fantasy Points: {te1.FP}");
+                }
+                else if (Question == "Antonio Gates Stats")
+                {
+                    Console.WriteLine($" Receptions:{te2.Rec}, Recieving Yards:{te2.Yds}, Yards after Catch :{te2.YAC}, Touchdowns :{te2.Rec}, Fumbles: {te2.Fmbs}, Fantasy Points: {te2.FP}");
+                }
+                else if (Question == "Lance Alworth Stats")
+                {
+                    Console.WriteLine($" Receptions:{wr1.Rec}, Recieving Yards:{wr1.Yds}, Yards after Catch :{wr1.YAC}, Touchdowns :{wr1.Rec}, Fumbles: {wr1.Fmbs}, Fantasy Points: {wr1.FP}");
+                }
+                else if (Question == "Keenan Allen Stats")
+                {
+                    Console.WriteLine($" Receptions:{wr2.Rec}, Recieving Yards:{wr2.Yds}, Yards after Catch :{wr2.YAC}, Touchdowns :{wr2.Rec}, Fumbles: {wr2.Fmbs}, Fantasy Points: {wr2.FP}");
+                }
+                else if (Question == "Quentin Jammer Stats")
+                {
+                    Console.WriteLine($" Interceptions:{cb1.DBInt}, Tackles:{cb1.Tkls}, Tackle Assists :{cb1.TklAsst}, Defensive Touchdowns :{cb1.DefTDs}, Fumbles Caused: {cb1.FumC}, Fumbles Recovered: {cb1.FumR}, Sacks: {cb1.Sks}");
+                }
+                else if (Question == "Casey Hayward Stats")
+                {
+                    Console.WriteLine($" Interceptions:{cb2.DBInt}, Tackles:{cb2.Tkls}, Tackle Assists :{cb2.TklAsst}, Defensive Touchdowns :{cb2.DefTDs}, Fumbles Caused: {cb2.FumC}, Fumbles Recovered: {cb2.FumR}, Sacks: {cb2.Sks}");
+                }
+                else if (Question == "Junior Seau Stats")
+                {
+                    Console.WriteLine($" Interceptions:{lb1.DBInt}, Tackles:{lb1.Tkls}, Tackle Assists :{lb1.TklAsst}, Defensive Touchdowns :{lb1.DefTDs}, Fumbles Caused: {lb1.FumC}, Fumbles Recovered: {lb1.FumR}, Sacks: {lb1.Sks}");
+                }
+                else if (Question == "Melvin Ingram Stats")
+                {
+                    Console.WriteLine($" Interceptions:{lb2.DBInt}, Tackles:{lb2.Tkls}, Tackle Assists :{lb2.TklAsst}, Defensive Touchdowns :{lb2.DefTDs}, Fumbles Caused: {lb2.FumC}, Fumbles Recovered: {lb2.FumR}, Sacks: {lb2.Sks}");
+                }
+                else if (Question == "Rodney Harrison Stats")
+                {
+                    Console.WriteLine($" Interceptions:{s1.DBInt}, Tackles:{s1.Tkls}, Tackle Assists :{s1.TklAsst}, Defensive Touchdowns :{s1.DefTDs}, Fumbles Caused: {s1.FumC}, Fumbles Recovered: {s1.FumR}, Sacks: {s1.Sks}");
+                }
+                else if (Question == "Derwin James Stats")
+                {
+                    Console.WriteLine($" Interceptions:{s2.DBInt}, Tackles:{s2.Tkls}, Tackle Assists :{s2.TklAsst}, Defensive Touchdowns :{s2.DefTDs}, Fumbles Caused: {s2.FumC}, Fumbles Recovered: {s2.FumR}, Sacks: {s2.Sks}");
+                }
+                else if (Question == "Jamal Williams Stats")
+                {
+                    Console.WriteLine($" Tackles:{dt1.Tkls}, Tackle Assists :{dt1.TklAsst}, Fumbles Caused: {dt1.FumC}, Fumbles Recovered: {dt1.FumR}, Sacks: {dt1.Sks}");
+                }
+                else if (Question == "Joey Bosa Stats")
+                {
+                    Console.WriteLine($" Tackles:{de1.Tkls}, Tackle Assists :{de1.TklAsst}, Fumbles Caused: {de1.FumC}, Fumbles Recovered: {de1.FumR}, Sacks: {de1.Sks}");
+                }
+                else if (Question == "Leslie O' Neal Stats")
+                {
+                    Console.WriteLine($" Tackles:{de2.Tkls}, Tackle Assists :{de2.TklAsst}, Fumbles Caused: {de2.FumC}, Fumbles Recovered: {de2.FumR}, Sacks: {de2.Sks}");
+                }
+                else if (Question == "Career Receiving Leader")
+                {
+                    Console.WriteLine($"{te2.Name} is the Chargers all time receiving leader. He leads the Chargers receivers in yards({te2.Yds}), catches({te2.Rec}) and touchdowns({te2.TDs})");
+                }
+                else if (Question == "Career Passing Leader")
+                {
+                    Console.WriteLine($"{qb2.Name} is the Chargers all time passing leader. He leads the Charger quarterbacks in yards({qb2.PassYDs}), completions({qb2.Cmps}), completion percentage({qb2.CmpPc}) and touchdowns({qb2.PassTDs})");
+                }
+                else if (Question == "Career Sacks Leader")
+                {
+                    Console.WriteLine($"{de2.Name} is the Chargers all time sacks leader. He has {de2.Sks} career sacks.");
+                }
+                else if (Question == "Career Rushing Leader")
+                {
+                    Console.WriteLine($"{rb1.Name} is the Chargers all time rushing leader. He leads Chargers running backs in yards({rb1.RushYds}) and touchdowns({rb1.RushTDs})");
+                }
+                else if (Question == "Most reliable fantasy player")
+                {
+                    Console.WriteLine($"{qb1.Name} is the most reliable fantasy player of the chargers players. He averages {qb1.FP} fantasy points.");
+                }
 
                 if (Question.ToLower() == "quit")
                 {
