@@ -25,6 +25,33 @@ namespace TestProject1
             this.Fumbles = fumbles;
             this.Fantasy_Points = fantasy_Points;
         }
+        public int Rec{
+            get{return Catches;}
+            set{Catches = value;}
+        }
+        public int Yds{
+            get{return Yards;}
+            set{Yards = value;}
+        }
+        public int YAC{
+            get{return Yards_After_Catch;}
+            set{Yards_After_Catch = value;}
+        }
+        public int TDs{
+            get{return Touchdowns;}
+            set{Touchdowns = value;}
+        }
+        public int Fmbs{
+            get{return Fumbles;}
+            set{Fumbles = value;}
+        }
+        public int FP{
+            get{return Fantasy_Points;}
+            set{Fantasy_Points = value;}
+        }
+        
+        
+        
     }
 
 }
