@@ -29,6 +29,46 @@ namespace TestProject1
             this.QB_rating = qB_rating;
             this.Fantasy_Points = fantasy_Points;
         }
+         public int PassYDs{
+            get{return Yards;}
+            set{Yards = value;}
+        }
+        
+        public int CmpPc{
+            get{return CompletionPercentage;}
+            set{CompletionPercentage = value;}
+            }
+        public int Cmps{
+            get{return Completions;}
+            set{Completions = value;}
+        }
+        public int PassTDs{
+            get{return PassingTDs;}
+            set{PassingTDs = value;} }
+        public int QBRushTDS{
+            get{return RushingTDs;}
+            set{RushingTDs = value;}
+        }
+        public int QBInt{
+            get{return Interceptions_thrown;}
+            set{Interceptions_thrown = value;}
+        }
+        public int Rating{
+            get{return QB_rating;}  
+            set{QB_rating = value;}
+        }
+        public int FP{
+            get{return Fantasy_Points;}
+            set{Fantasy_Points = value;}
+        }
+        
+
+        
+        
+
+
+        
+
 
     }
 
