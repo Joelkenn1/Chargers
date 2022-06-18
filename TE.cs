@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestProject1
 {
-    public class TE : Player
+    public class WR : Player
     {
         public int Catches = 0;
         public int Yards = 0;
@@ -15,7 +15,7 @@ namespace TestProject1
         public int Fumbles = 0;
         public int Fantasy_Points = 0;
 
-        public TE(int catches, int yards, int yards_after_catch, int touchdowns, int fumbles, int fantasy_Points, string name,  string position, int age, int number, string height, int weight, string college)
+        public WR(int catches, int yards, int yards_after_catch, int touchdowns, int fumbles, int fantasy_Points, string name,  string position,  string age, int number, string height, int weight, string college)
         : base(name, position, age, number, height, weight, college)
         {
             this.Catches = catches;
@@ -52,6 +52,7 @@ namespace TestProject1
         
         
         
+
     }
 
 }
