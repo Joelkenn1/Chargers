@@ -15,7 +15,7 @@ namespace TestProject1
         public int Fumbles = 0;
         public int Fantasy_Points = 0;
 
-        public RB(int rushing_attempts, int rushing_yards, int rushing_tds, int receptions, int fumbles, int fantasy_Points, string name, string position, int age, int number, string height, int weight, string college)
+        public RB(int rushing_attempts, int rushing_yards, int rushing_tds, int receptions, int fumbles, int fantasy_Points, string name, string position,  string age, int number, string height, int weight, string college)
         : base(name, position, age, number, height, weight, college)
         {
             this.Rushing_Attempts = rushing_attempts;
@@ -48,7 +48,7 @@ namespace TestProject1
         }
         public int FP{
             get{return Fantasy_Points;}
-            set{Sacks = Fantasy_Points;}
+            set{Fantasy_Points = value;}
         }
     }
 }
