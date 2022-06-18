@@ -13,9 +13,9 @@ namespace TestProject1
         public int Fumbles_Caused = 0;
         public int Fumble_Recoveries = 0;
         public int Sacks = 0;
-        public int Fantasy_Points = 0;
+        
 
-        public DE(int tackels, int tackle_Assists, int fumbles_Caused, int fumble_Recoveries, int sacks, int fantasy_Points, string name, string position, int age, int number, string height, int weight, string college)
+        public DE(int tackels, int tackle_Assists, int fumbles_Caused, int fumble_Recoveries, int sacks, string name, string position,  string age, int number, string height, int weight, string college)
             : base(name, position, age, number, height, weight, college)
         {
             this.Tackels = tackels;
@@ -23,7 +23,7 @@ namespace TestProject1
             this.Fumbles_Caused = fumbles_Caused;
             this.Fumble_Recoveries = fumble_Recoveries;
             this.Sacks = sacks;
-            this.Fantasy_Points = fantasy_Points;
+            
         }
         public int Tkls{
             get{return Tackels;}
@@ -45,5 +45,5 @@ namespace TestProject1
             get{return Sacks;}
             set{Sacks = value;}
         }
-    }
+    }   
 }
