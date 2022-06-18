@@ -10,13 +10,13 @@ namespace TestProject1
     {
         public string Name;
         public string Position;
-        public int Age;
+        public string Age;
         public int Number;
         public string Height;
         public int Weight;
         public string College;
 
-        public Player(string name, string position, int age, int number, string height, int weight, string college)
+        public Player(string name, string position,  string age, int number, string height, int weight, string college)
         {
             this.Name = name;
             this.Position = position;
@@ -38,7 +38,7 @@ namespace TestProject1
             set { Position = value; }
         }
 
-        public int PlayerAge
+        public string PlayerAge
         {
             get { return Age; }
             set { Age = value; }
