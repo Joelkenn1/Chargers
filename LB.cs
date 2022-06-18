@@ -15,9 +15,9 @@ namespace TestProject1
         public int Fumbles_Caused = 0;
         public int Fumble_Recoveries = 0;
         public int Sacks = 0;
-        public int Fantasy_Points = 0;
+        
 
-        public LB(int interceptions_caught, int tackels, int tackle_Assists, int defensive_Touchdowns, int fumbles_Caused, int fumble_Recoveries, int sacks, int fantasy_Points, string name, string position, int age, int number, string height, int weight, string college)
+        public LB(int interceptions_caught, int tackels, int tackle_Assists, int defensive_Touchdowns, int fumbles_Caused, int fumble_Recoveries, int sacks, string name, string position,  string age, int number, string height, int weight, string college)
           : base(name, position, age, number, height, weight, college)
         {
             this.Interceptions_caught = interceptions_caught;
@@ -27,11 +27,11 @@ namespace TestProject1
             this.Fumbles_Caused = fumbles_Caused;
             this.Fumble_Recoveries = fumble_Recoveries;
             this.Sacks = sacks;
-            this.Fantasy_Points = fantasy_Points;
+        
         }
         public int DBInt{
-            get{return Interceptions_Caught;}
-            set{Interceptions_Caught = value;}
+            get{return Interceptions_caught;}
+            set{Interceptions_caught = value;}
         }
         public int Tkls{
             get{return Tackels;}
