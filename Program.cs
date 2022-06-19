@@ -29,7 +29,7 @@ namespace TestProject1
             Console.WriteLine("");
             Console.WriteLine("Player Info Catgories: Name|Position|Age|Jersey Number|Height|Weight|College|");
             Console.WriteLine("");
-            Console.WriteLine("To access each player's stats, type the player's initials and 'Stats'. Ex: Antonio Gates (AG Stats)");
+            Console.WriteLine("To access each player's stats, type the player's initials and 'Stats'. Ex: Antonio Gates (ag stats)");
             Console.WriteLine("");
             Console.WriteLine("Position Stat Categories");
             Console.WriteLine("");
@@ -44,8 +44,8 @@ namespace TestProject1
             Console.WriteLine("Defensive Linmen: Solo Tackles|Tackle Assists|Fumbles Caused|Fumble Recoveries|Sacks");
             Console.WriteLine("");
             Console.WriteLine("");
-            Console.WriteLine("To access the list of players any time in the program type 'list'");
-            Console.WriteLine("To exit the program type 'quit'");
+            Console.WriteLine("To access the list of players any time in the program type: List");
+            Console.WriteLine("To exit the program type: Quit");
             Console.WriteLine("");
             QB qb1 = new QB(9350, 66, 839, 69, 8, 25, 65, 22, "Justin Herbert", "QB", "23", 10, "6 - 6", 237, "Oregon");
             {
@@ -141,7 +141,7 @@ namespace TestProject1
             while (loop)
             {
 
-                if (Question == "About JH")
+                if (Question.ToLower() == "about jh")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {qb1.Playername}, Position: {qb1.PlayerPosition}, Age: {qb1.PlayerAge}, Number: {qb1.PlayerNumber}, Height: {qb1.PlayerHeight}, Weight: {qb1.PlayerWeight}, College: {qb1.PlayerCollege}");
@@ -162,7 +162,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About PR")
+                else if (Question.ToLower() == "about pr")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {qb2.Playername}, Position: {qb2.PlayerPosition}, Age: {qb2.PlayerAge}, Number: {qb2.PlayerNumber}, Height: {qb2.PlayerHeight}, Weight: {qb2.PlayerWeight}, College: {qb2.PlayerCollege}");
@@ -183,7 +183,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About  LT")
+                else if (Question.ToLower() == "about lt")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {rb1.Playername}, Position: {rb1.PlayerPosition}, Age: {rb1.PlayerAge}, Number: {rb1.PlayerNumber}, Height: {rb1.PlayerHeight}, Weight: {rb1.PlayerWeight}, College: {rb1.PlayerCollege}");
@@ -205,7 +205,7 @@ namespace TestProject1
                     }
                     
                 }
-                else if (Question == "About AE")
+                else if (Question.ToLower() == "about ae")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {rb2.Playername}, Position: {rb2.PlayerPosition}, Age: {rb2.PlayerAge}, Number: {rb2.PlayerNumber}, Height: {rb2.PlayerHeight}, Weight: {rb2.PlayerWeight}, College: {rb2.PlayerCollege}");
@@ -226,7 +226,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About KW")
+                else if (Question.ToLower() == "about kw")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {te1.Playername}, Position: {te1.PlayerPosition}, Age: {te1.PlayerAge}, Number: {te1.PlayerNumber}, Height: {te1.PlayerHeight}, Weight: {te1.PlayerWeight}, College: {te1.PlayerCollege}");
@@ -247,7 +247,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About AG")
+                else if (Question.ToLower() == "about ag")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {te2.Playername}, Position: {te2.PlayerPosition}, Age: {te2.PlayerAge}, Number: {te2.PlayerNumber}, Height: {te2.PlayerHeight}, Weight: {te2.PlayerWeight}, College: {te2.PlayerCollege}");
@@ -268,7 +268,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About LA")
+                else if (Question.ToLower() == "about la")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {wr1.Playername}, Position: {wr1.PlayerPosition}, Age: {wr1.PlayerAge}, Number: {wr1.PlayerNumber}, Height: {wr1.PlayerHeight}, Weight: {wr1.PlayerWeight}, College: {wr1.PlayerCollege}");
@@ -289,7 +289,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About KA")
+                else if (Question.ToLower() == "about ka")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {wr2.Playername}, Position: {wr2.PlayerPosition}, Age: {wr2.PlayerAge}, Number: {wr2.PlayerNumber}, Height: {wr2.PlayerHeight}, Weight: {wr2.PlayerWeight}, College: {wr2.PlayerCollege}");
@@ -310,7 +310,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About QJ")
+                else if (Question.ToLower() == "about qj")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {cb1.Playername}, Position: {cb1.PlayerPosition}, Age: {cb1.PlayerAge}, Number: {cb1.PlayerNumber}, Height: {cb1.PlayerHeight}, Weight: {cb1.PlayerWeight}, College: {cb1.PlayerCollege}");
@@ -331,7 +331,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About CH")
+                else if (Question.ToLower() == "about ch")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {cb2.Playername}, Position: {cb2.PlayerPosition}, Age: {cb2.PlayerAge}, Number: {cb2.PlayerNumber}, Height: {cb2.PlayerHeight}, Weight: {cb2.PlayerWeight}, College: {cb2.PlayerCollege}");
@@ -352,7 +352,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About JS")
+                else if (Question.ToLower() == "about js")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {lb1.Playername}, Position: {lb1.PlayerPosition}, Age: {lb1.PlayerAge}, Number: {lb1.PlayerNumber}, Height: {lb1.PlayerHeight}, Weight: {lb1.PlayerWeight}, College: {lb1.PlayerCollege}");
@@ -373,7 +373,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About MI")
+                else if (Question.ToLower() == "about mi")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {lb2.Playername}, Position: {lb2.PlayerPosition}, Age: {lb2.PlayerAge}, Number: {lb2.PlayerNumber}, Height: {lb2.PlayerHeight}, Weight: {lb2.PlayerWeight}, College: {lb2.PlayerCollege}");
@@ -394,7 +394,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About RH")
+                else if (Question.ToLower() == "about rh")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {s1.Playername}, Position: {s1.PlayerPosition}, Age: {s1.PlayerAge}, Number: {s1.PlayerNumber}, Height: {s1.PlayerHeight}, Weight: {s1.PlayerWeight}, College: {s1.PlayerCollege}");
@@ -415,7 +415,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About DJ")
+                else if (Question.ToLower() == "about dj")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {s2.Playername}, Position: {s2.PlayerPosition}, Age: {s2.PlayerAge}, Number: {s2.PlayerNumber}, Height: {s2.PlayerHeight}, Weight: {s2.PlayerWeight}, College: {s2.PlayerCollege}");
@@ -436,7 +436,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About JW")
+                else if (Question.ToLower() == "about jw")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {dt1.Playername}, Position: {dt1.PlayerPosition}, Age: {dt1.PlayerAge}, Number: {dt1.PlayerNumber}, Height: {dt1.PlayerHeight}, Weight: {dt1.PlayerWeight}, College: {dt1.PlayerCollege}");
@@ -457,7 +457,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About JB")
+                else if (Question.ToLower() == "about jb")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {de1.Playername}, Position: {de1.PlayerPosition}, Age: {de1.PlayerAge}, Number: {de1.PlayerNumber}, Height: {de1.PlayerHeight}, Weight: {de1.PlayerWeight}, College: {de1.PlayerCollege}");
@@ -478,7 +478,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "About LN")
+                else if (Question.ToLower() == "about ln")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Name: {de2.Playername}, Position: {de2.PlayerPosition}, Age: {de2.PlayerAge}, Number: {de2.PlayerNumber}, Height: {de2.PlayerHeight}, Weight: {de2.PlayerWeight}, College: {de2.PlayerCollege}");
@@ -499,7 +499,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "JH Stats")
+                else if (Question.ToLower() == "jh stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Passing Yards: {qb1.PassYDs}, Completion Percentage: {qb1.CmpPc}, Completions: {qb1.Cmps}, Passing Touchdowns: {qb1.PassTDs}, Rushing Touchdowns: {qb1.QBRushTDS}, Interceptions: {qb1.QBInt}, QB Rating: {qb1.Rating}, Average Fantasy Points: {qb1.FP}");
@@ -520,7 +520,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
             }
-                else if (Question == "PR Stats")
+                else if (Question.ToLower() == "pr stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Passing Yards: {qb2.PassYDs}, Completion Percentage: {qb2.CmpPc}, Completions: {qb2.Cmps}, Passing Touchdowns: {qb2.PassTDs}, Rushing Touchdowns: {qb2.QBRushTDS}, Interceptions: {qb2.QBInt}, QB Rating: {qb2.Rating}, Average Fantasy Points: {qb2.FP}");
@@ -541,7 +541,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "LT Stats")
+                else if (Question.ToLower() == "lt stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Rushing Attempts: {rb1.Rushatt}, Rushing Yards: {rb1.RushYds}, Rushing Touchdowns : {rb1.RushTDs}, Receptions: {rb1.Rec}, Fumbles: {rb1.Fmbs}, Average Fantasy Points: {rb1.FP}");
@@ -562,7 +562,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "AE Stats")
+                else if (Question.ToLower() == "ae stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Rushing Attempts: {rb2.Rushatt}, Rushing Yards: {rb2.RushYds}, Rushing Touchdowns : {rb2.RushTDs}, Receptions: {rb2.Rec}, Fumbles: {rb2.Fmbs}, Average Fantasy Points: {rb2.FP}");
@@ -583,7 +583,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "KW Stats")
+                else if (Question.ToLower() == "kw stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Receptions: {te1.Rec}, Recieving Yards: {te1.Yds}, Yards after Catch: {te1.YAC}, Touchdowns: {te1.Rec}, Fumbles: {te1.Fmbs}, Average Fantasy Points: {te1.FP}");
@@ -604,7 +604,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question  == "AG Stats")
+                else if (Question.ToLower()  == "ag stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Receptions: {te2.Rec}, Recieving Yards: {te2.Yds}, Yards after Catch: {te2.YAC}, Touchdowns: {te2.Rec}, Fumbles: {te2.Fmbs}, Average Fantasy Points: {te2.FP}");
@@ -625,7 +625,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "LA Stats")
+                else if (Question.ToLower() == "la stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Receptions: {wr1.Rec}, Recieving Yards: {wr1.Yds}, Yards after Catch: {wr1.YAC}, Touchdowns: {wr1.Rec}, Fumbles: {wr1.Fmbs}, Average Fantasy Points: {wr1.FP}");
@@ -646,7 +646,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "KA Stats")
+                else if (Question.ToLower() == "ka stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Receptions: {wr2.Rec}, Recieving Yards: {wr2.Yds}, Yards after Catch: {wr2.YAC}, Touchdowns: {wr2.Rec}, Fumbles: {wr2.Fmbs}, Average Fantasy Points: {wr2.FP}");
@@ -667,7 +667,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "QJ Stats")
+                else if (Question.ToLower() == "qj stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Interceptions: {cb1.DBInt}, Tackles: {cb1.Tkls}, Tackle Assists: {cb1.TklAsst}, Defensive Touchdowns: {cb1.DefTDs}, Fumbles Caused: {cb1.FumC}, Fumbles Recovered: {cb1.FumR}, Sacks: {cb1.Sks}");
@@ -688,7 +688,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "CH Stats")
+                else if (Question.ToLower() == "ch stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Interceptions: {cb2.DBInt}, Tackles: {cb2.Tkls}, Tackle Assists: {cb2.TklAsst}, Defensive Touchdowns: {cb2.DefTDs}, Fumbles Caused: {cb2.FumC}, Fumbles Recovered: {cb2.FumR}, Sacks: {cb2.Sks}");
@@ -709,7 +709,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "JS Stats")
+                else if (Question.ToLower() == "js stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Interceptions: {lb1.DBInt}, Tackles: {lb1.Tkls}, Tackle Assists: {lb1.TklAsst}, Defensive Touchdowns: {lb1.DefTDs}, Fumbles Caused: {lb1.FumC}, Fumbles Recovered: {lb1.FumR}, Sacks: {lb1.Sks}");
@@ -730,7 +730,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "MI Stats")
+                else if (Question.ToLower() == "mi stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Interceptions: {lb2.DBInt}, Tackles: {lb2.Tkls}, Tackle Assists: {lb2.TklAsst}, Defensive Touchdowns: {lb2.DefTDs}, Fumbles Caused: {lb2.FumC}, Fumbles Recovered: {lb2.FumR}, Sacks: {lb2.Sks}");
@@ -751,7 +751,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "RH Stats")
+                else if (Question.ToLower() == "rh stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Interceptions: {s1.DBInt}, Tackles: {s1.Tkls}, Tackle Assists: {s1.TklAsst}, Defensive Touchdowns: {s1.DefTDs}, Fumbles Caused: {s1.FumC}, Fumbles Recovered: {s1.FumR}, Sacks: {s1.Sks}");
@@ -772,7 +772,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "DJ Stats")
+                else if (Question.ToLower() == "dj stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Interceptions: {s2.DBInt}, Tackles: {s2.Tkls}, Tackle Assists: {s2.TklAsst}, Defensive Touchdowns: {s2.DefTDs}, Fumbles Caused: {s2.FumC}, Fumbles Recovered: {s2.FumR}, Sacks: {s2.Sks}");
@@ -793,7 +793,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "JW Stats")
+                else if (Question.ToLower() == "jw stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Tackles: {dt1.Tkls}, Tackle Assists: {dt1.TklAsst}, Fumbles Caused: {dt1.FumC}, Fumbles Recovered: {dt1.FumR}, Sacks: {dt1.Sks}");
@@ -814,7 +814,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "JB Stats")
+                else if (Question.ToLower() == "jb stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Tackles: {de1.Tkls}, Tackle Assists: {de1.TklAsst}, Fumbles Caused: {de1.FumC}, Fumbles Recovered: {de1.FumR}, Sacks: {de1.Sks}");
@@ -835,7 +835,7 @@ namespace TestProject1
                         Console.WriteLine("");
                     }
                 }
-                else if (Question == "LN Stats")
+                else if (Question.ToLower() == "ln stats")
                 {
                     Console.WriteLine("");
                     Console.WriteLine($" Tackles: {de2.Tkls}, Tackle Assists: {de2.TklAsst}, Fumbles Caused: {de2.FumC}, Fumbles Recovered: {de2.FumR}, Sacks: {de2.Sks}");
@@ -896,7 +896,7 @@ namespace TestProject1
                     Console.WriteLine("Enter another number from 1-5 for more all time stats/Enter Player Name: (Type 'List' for reference).");
                     Console.WriteLine("");
                 }
-                else if (Question.ToLower() == "list" || Question == "List"){
+                else if (Question.ToLower() == "list"){
                     Console.WriteLine("");
                     Console.WriteLine($"{qb1.Playername}({qb1.PlayerPosition})");
                     Console.WriteLine($"{qb2.Playername}({qb2.PlayerPosition})");
@@ -927,7 +927,7 @@ namespace TestProject1
                     Console.WriteLine("");
                     
                 }
-               else if (Question == "Quit" || Question == "quit")
+               else if (Question.ToLower() == "quit")
                 {   
                     loop = false;
                     break;
@@ -935,8 +935,10 @@ namespace TestProject1
                 }
                 else {
                     Console.WriteLine("");
-                    Console.WriteLine("*Invalid Player/Number Input*");
-                    Console.WriteLine("Make sure 'About' and 'Stats' are capitalized. *Initals must be capitalized as well. Only numbers 1-5 are accepted.");
+                    Console.WriteLine("*Invalid Player/Number Input. Try Again.*");
+                    Console.WriteLine("(Make sure you are only typing player initials from the list above. Only numbers 1-5 are accepted.)");
+                    Console.WriteLine("");
+                    Console.WriteLine("Enter Player Name (*Remember to use 'About' and 'Stats' keywords):");
                     Console.WriteLine("");
                 }
                  Question = Console.ReadLine();
