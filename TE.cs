@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestProject1
 {
-    public class WR : Player
+    public class TE : Player
     {
         public int Catches = 0;
         public int Yards = 0;
@@ -15,8 +15,8 @@ namespace TestProject1
         public int Fumbles = 0;
         public int Fantasy_Points = 0;
 
-        public WR(int catches, int yards, int yards_after_catch, int touchdowns, int fumbles, int fantasy_Points, string name,  string position,  string age, int number, string height, int weight, string college)
-        : base(name, position, age, number, height, weight, college)
+        public TE(int catches, int yards, int yards_after_catch, int touchdowns, int fumbles, int fantasy_Points, string name, string position, string age, int number, string height, int weight, string college, string accolades)
+        : base(name, position, age, number, height, weight, college, accolades)
         {
             this.Catches = catches;
             this.Yards = yards;
@@ -25,33 +25,39 @@ namespace TestProject1
             this.Fumbles = fumbles;
             this.Fantasy_Points = fantasy_Points;
         }
-        public int Rec{
-            get{return Catches;}
-            set{Catches = value;}
+        public int Rec
+        {
+            get { return Catches; }
+            set { Catches = value; }
         }
-        public int Yds{
-            get{return Yards;}
-            set{Yards = value;}
+        public int Yds
+        {
+            get { return Yards; }
+            set { Yards = value; }
         }
-        public int YAC{
-            get{return Yards_After_Catch;}
-            set{Yards_After_Catch = value;}
+        public int YAC
+        {
+            get { return Yards_After_Catch; }
+            set { Yards_After_Catch = value; }
         }
-        public int TDs{
-            get{return Touchdowns;}
-            set{Touchdowns = value;}
+        public int TDs
+        {
+            get { return Touchdowns; }
+            set { Touchdowns = value; }
         }
-        public int Fmbs{
-            get{return Fumbles;}
-            set{Fumbles = value;}
+        public int Fmbs
+        {
+            get { return Fumbles; }
+            set { Fumbles = value; }
         }
-        public int FP{
-            get{return Fantasy_Points;}
-            set{Fantasy_Points = value;}
+        public int FP
+        {
+            get { return Fantasy_Points; }
+            set { Fantasy_Points = value; }
         }
-        
-        
-        
+
+
+
 
     }
 
