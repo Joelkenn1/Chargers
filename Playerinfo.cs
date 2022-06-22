@@ -15,8 +15,9 @@ namespace TestProject1
         public string Height;
         public int Weight;
         public string College;
+        public string Accolades;
 
-        public Player(string name, string position,  string age, int number, string height, int weight, string college)
+        public Player(string name, string position, string age, int number, string height, int weight, string college, string accolades)
         {
             this.Name = name;
             this.Position = position;
@@ -25,6 +26,7 @@ namespace TestProject1
             this.Height = height;
             this.Weight = weight;
             this.College = college;
+            this.Accolades = accolades;
         }
         public string Playername
         {
@@ -68,7 +70,13 @@ namespace TestProject1
             set { College = value; }
         }
 
-       
+        public string PlayerAccolades
+        {
+            get { return Accolades; }
+            set { Accolades = value; }
+        }
+
+
     }
 
 }
