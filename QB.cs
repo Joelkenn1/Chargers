@@ -17,8 +17,8 @@ namespace TestProject1
         public int QB_rating = 0;
         public int Fantasy_Points = 0;
 
-        public QB(int yards, int completionPercentage, int completions, int passingTDs, int rushingTDs, int interceptions_thrown, int qB_rating, int fantasy_Points, string name, string position,  string age, int number, string height, int weight, string college)
-            : base(name, position, age, number, height, weight, college)
+        public QB(int yards, int completionPercentage, int completions, int passingTDs, int rushingTDs, int interceptions_thrown, int qB_rating, int fantasy_Points, string name, string position, string age, int number, string height, int weight, string college, string accolades)
+            : base(name, position, age, number, height, weight, college, accolades)
         {
             this.Yards = yards;
             this.CompletionPercentage = completionPercentage;
@@ -29,45 +29,54 @@ namespace TestProject1
             this.QB_rating = qB_rating;
             this.Fantasy_Points = fantasy_Points;
         }
-        public int PassYDs{
-            get{return Yards;}
-            set{Yards = value;}
+        public int PassYDs
+        {
+            get { return Yards; }
+            set { Yards = value; }
         }
-        
-        public int CmpPc{
-            get{return CompletionPercentage;}
-            set{CompletionPercentage = value;}
-            }
-        public int Cmps{
-            get{return Completions;}
-            set{Completions = value;}
-        }
-        public int PassTDs{
-            get{return PassingTDs;}
-            set{PassingTDs = value;} }
-        public int QBRushTDS{
-            get{return RushingTDs;}
-            set{RushingTDs = value;}
-        }
-        public int QBInt{
-            get{return Interceptions_thrown;}
-            set{Interceptions_thrown = value;}
-        }
-        public int Rating{
-            get{return QB_rating;}  
-            set{QB_rating = value;}
-        }
-        public int FP{
-            get{return Fantasy_Points;}
-            set{Fantasy_Points = value;}
-        }
-        
 
-        
-        
+        public int CmpPc
+        {
+            get { return CompletionPercentage; }
+            set { CompletionPercentage = value; }
+        }
+        public int Cmps
+        {
+            get { return Completions; }
+            set { Completions = value; }
+        }
+        public int PassTDs
+        {
+            get { return PassingTDs; }
+            set { PassingTDs = value; }
+        }
+        public int QBRushTDS
+        {
+            get { return RushingTDs; }
+            set { RushingTDs = value; }
+        }
+        public int QBInt
+        {
+            get { return Interceptions_thrown; }
+            set { Interceptions_thrown = value; }
+        }
+        public int Rating
+        {
+            get { return QB_rating; }
+            set { QB_rating = value; }
+        }
+        public int FP
+        {
+            get { return Fantasy_Points; }
+            set { Fantasy_Points = value; }
+        }
 
 
-        
+
+
+
+
+
 
     }
 
