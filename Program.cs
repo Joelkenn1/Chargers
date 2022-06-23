@@ -27,7 +27,7 @@ namespace TestProject1
             Console.WriteLine("");
             Console.WriteLine("-Running Backs: Rushing Attempts|Rushing Yards|Rushing Touchdowns|Receptions|Fumbles|Average Fantasy Points");
             Console.WriteLine("");
-            Console.WriteLine("-Wide Receivers & Tide Ends: Receptions|Yards|Yards afetr Catch|Touchdowns|Fumbles|Average Fantasy Points|");
+            Console.WriteLine("-Wide Receivers & Tide Ends: Receptions|Yards|Yards after Catch|Touchdowns|Fumbles|Average Fantasy Points|");
             Console.WriteLine("");
             Console.WriteLine("-Cornerbacks, Safties & Linebackers: Interceptions|Solo Tackels|Tackle Assists|Defensive Touchdowns|Fumbles Caused|Fumble Recoveries|Sacks|");
             Console.WriteLine("");
