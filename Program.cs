@@ -12,7 +12,26 @@ namespace TestProject1
         static void Main(string[] args)
         {
 
-            Console.WriteLine("All-time Chargers Players:");
+            Console.WriteLine("All-time Los Angeles Chargers Players:");
+            Console.WriteLine("");
+            Console.WriteLine("This is a program that gives you insight on the greatest Los Angeles Chargers players. Follow the instructions below to get what you need to know about each superstar.");
+            Console.WriteLine("");
+            Console.WriteLine("");
+
+
+            Console.WriteLine("Player Info Catgories: Name|Position|Age|Jersey Number|Height|Weight|College|");
+            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("Position Stat Categories:");
+            Console.WriteLine("-----------------------------------------------------------------------------");
+            Console.WriteLine("-Quarterbacks: Passing Yards|Completion Percentage|Completions|Passing Touchdowns|Rushing Touchdowns|Interceptions|Quarterback Rating|Average Fantasy Points| ");
+            Console.WriteLine("");
+            Console.WriteLine("-Running Backs: Rushing Attempts|Rushing Yards|Rushing Touchdowns|Receptions|Fumbles|Average Fantasy Points");
+            Console.WriteLine("");
+            Console.WriteLine("-Wide Receivers & Tide Ends: Receptions|Yards|Yards afetr Catch|Touchdowns|Fumbles|Average Fantasy Points|");
+            Console.WriteLine("");
+            Console.WriteLine("-Cornerbacks, Safties & Linebackers: Interceptions|Solo Tackels|Tackle Assists|Defensive Touchdowns|Fumbles Caused|Fumble Recoveries|Sacks|");
+            Console.WriteLine("");
+            Console.WriteLine("-Defensive Linmen: Solo Tackles|Tackle Assists|Fumbles Caused|Fumble Recoveries|Sacks");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("Type the indicated number for each Stat leader:");
@@ -23,28 +42,8 @@ namespace TestProject1
             Console.WriteLine("(4): Sacks Leader");
             Console.WriteLine("(5): Average Fantasy Point Leader");
             Console.WriteLine("");
-            Console.WriteLine("");
-
-            Console.WriteLine("To access info about each player, type 'About' and the player's initials. Ex: Leslie O' Neal (About LN)");
-            Console.WriteLine("");
-            Console.WriteLine("Player Info Catgories: Name|Position|Age|Jersey Number|Height|Weight|College|");
-            Console.WriteLine("");
-            Console.WriteLine("To access each player's stats, type the player's initials and 'Stats'. Ex: Antonio Gates (ag stats)");
-            Console.WriteLine("");
-            Console.WriteLine("Position Stat Categories");
-            Console.WriteLine("");
-            Console.WriteLine("Quarterbacks: Passing Yards|Completion Percentage|Completions|Passing Touchdowns|Rushing Touchdowns|Interceptions|Quarterback Rating|Average Fantasy Points| ");
-            Console.WriteLine("");
-            Console.WriteLine("Running Backs: Rushing Attempts|Rushing Yards|Rushing Touchdowns|Receptions|Fumbles|Average Fantasy Points");
-            Console.WriteLine("");
-            Console.WriteLine("Wide Receivers & Tide Ends: Receptions|Yards|Yards afetr Catch|Touchdowns|Fumbles|Average Fantasy Points|");
-            Console.WriteLine("");
-            Console.WriteLine("Cornerbacks, Safties & Linebackers: Interceptions|Solo Tackels|Tackle Assists|Defensive Touchdowns|Fumbles Caused|Fumble Recoveries|Sacks|");
-            Console.WriteLine("");
-            Console.WriteLine("Defensive Linmen: Solo Tackles|Tackle Assists|Fumbles Caused|Fumble Recoveries|Sacks");
-            Console.WriteLine("");
-            Console.WriteLine("");
             Console.WriteLine("To access the list of players any time in the program type: List");
+            Console.WriteLine("----------------------------------------------------------------");
             Console.WriteLine("To exit the program type: Quit");
             Console.WriteLine("");
             QB qb1 = new QB(9350, 66, 839, 69, 8, 25, 65, 22, "Justin Herbert", "QB", "23", 10, "6 - 6", 237, "Oregon", "2020 ROTY, 2020 Offensive ROTY, 1x Pro Bowl");
@@ -132,6 +131,10 @@ namespace TestProject1
             {
                 Console.WriteLine($"{de2.Playername}({de2.PlayerPosition})");
             }
+            Console.WriteLine("");
+            Console.WriteLine("To access info about each player, type 'About' and the player's initials. Ex: Leslie O' Neal (About LN/about ln)");
+            Console.WriteLine("");
+            Console.WriteLine("To access each player's stats, type the player's initials and 'Stats'. Ex: Antonio Gates (ag stats/AG Stats)");
             Console.WriteLine("");
 
 
