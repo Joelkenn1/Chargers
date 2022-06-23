@@ -155,7 +155,7 @@ namespace TestProject1
                     if (c.ToLower() == "yes")
                     {
                         Console.WriteLine("");
-                        Console.WriteLine($" Passing Yards: {qb1.PassYDs}, Completion Percentage: {qb1.CmpPc}, Completions : {qb1.Cmps}, Passing Touchdowns: {qb1.PassTDs}, Rushing Touchdowns: {qb1.QBRushTDS}, Interceptions: {qb1.QBInt}, QB Rating: {qb1.Rating}, Average Fantasy Points: {qb1.FP}");
+                        Console.WriteLine($" Passing Yards: {qb1.PassYDs}, Completion Percentage: {qb1.CmpPc}, Completions: {qb1.Cmps}, Passing Touchdowns: {qb1.PassTDs}, Rushing Touchdowns: {qb1.QBRushTDS}, Interceptions: {qb1.QBInt}, QB Rating: {qb1.Rating}, Average Fantasy Points: {qb1.FP}");
                         Console.WriteLine("");
                         Console.WriteLine("Enter another player (*Remember to use 'About' and 'Stats' keywords):");
                         Console.WriteLine("");
