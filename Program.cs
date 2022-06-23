@@ -317,7 +317,7 @@ namespace TestProject1
                     if (c.ToLower() == "yes")
                     {
                         Console.WriteLine("");
-                        Console.WriteLine($" Receptions: {wr2.Rec}, Recieving Yards: {wr2.Yds}, Yards after Catch: {wr2.YAC}, Touchdowns :{wr2.Rec}, Fumbles: {wr2.Fmbs}, Average Fantasy Points: {wr2.FP}");
+                        Console.WriteLine($" Receptions: {wr2.Rec}, Recieving Yards: {wr2.Yds}, Yards after Catch: {wr2.YAC}, Touchdowns: {wr2.Rec}, Fumbles: {wr2.Fmbs}, Average Fantasy Points: {wr2.FP}");
                         Console.WriteLine("");
                         Console.WriteLine("Enter another player (*Remember to use 'About' and 'Stats' keywords):");
                         Console.WriteLine("");
@@ -363,7 +363,7 @@ namespace TestProject1
                     if (c.ToLower() == "yes")
                     {
                         Console.WriteLine("");
-                        Console.WriteLine($" Interceptions: {cb2.DBInt}, Tackles: {cb2.Tkls}, Tackle Assists :{cb2.TklAsst}, Defensive Touchdowns :{cb2.DefTDs}, Fumbles Caused: {cb2.FumC}, Fumbles Recovered: {cb2.FumR}, Sacks: {cb2.Sks}");
+                        Console.WriteLine($" Interceptions: {cb2.DBInt}, Tackles: {cb2.Tkls}, Tackle Assists: {cb2.TklAsst}, Defensive Touchdowns :{cb2.DefTDs}, Fumbles Caused: {cb2.FumC}, Fumbles Recovered: {cb2.FumR}, Sacks: {cb2.Sks}");
                         Console.WriteLine("");
                         Console.WriteLine("Enter another player (*Remember to use 'About' and 'Stats' keywords):");
                         Console.WriteLine("");
