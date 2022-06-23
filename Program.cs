@@ -248,7 +248,7 @@ namespace TestProject1
                     if (c.ToLower() == "yes")
                     {
                         Console.WriteLine("");
-                        Console.WriteLine($" Receptions:{te1.Rec}, Recieving Yards:{te1.Yds}, Yards after Catch :{te1.YAC}, Touchdowns :{te1.Rec}, Fumbles: {te1.Fmbs}, Average Fantasy Points: {te1.FP}");
+                        Console.WriteLine($" Receptions: {te1.Rec}, Recieving Yards: {te1.Yds}, Yards after Catch: {te1.YAC}, Touchdowns :{te1.Rec}, Fumbles: {te1.Fmbs}, Average Fantasy Points: {te1.FP}");
                         Console.WriteLine("");
                         Console.WriteLine("Enter another player (*Remember to use 'About' and 'Stats' keywords):");
                         Console.WriteLine("");
@@ -363,7 +363,7 @@ namespace TestProject1
                     if (c.ToLower() == "yes")
                     {
                         Console.WriteLine("");
-                        Console.WriteLine($" Interceptions: {cb2.DBInt}, Tackles: {cb2.Tkls}, Tackle Assists: {cb2.TklAsst}, Defensive Touchdowns :{cb2.DefTDs}, Fumbles Caused: {cb2.FumC}, Fumbles Recovered: {cb2.FumR}, Sacks: {cb2.Sks}");
+                        Console.WriteLine($" Interceptions: {cb2.DBInt}, Tackles: {cb2.Tkls}, Tackle Assists: {cb2.TklAsst}, Defensive Touchdowns: {cb2.DefTDs}, Fumbles Caused: {cb2.FumC}, Fumbles Recovered: {cb2.FumR}, Sacks: {cb2.Sks}");
                         Console.WriteLine("");
                         Console.WriteLine("Enter another player (*Remember to use 'About' and 'Stats' keywords):");
                         Console.WriteLine("");
@@ -524,7 +524,7 @@ namespace TestProject1
                     if (c.ToLower() == "yes")
                     {
                         Console.WriteLine("");
-                        Console.WriteLine($" Tackles: {de2.Tkls}, Tackle Assists : {de2.TklAsst}, Fumbles Caused: {de2.FumC}, Fumbles Recovered: {de2.FumR}, Sacks: {de2.Sks}");
+                        Console.WriteLine($" Tackles: {de2.Tkls}, Tackle Assists: {de2.TklAsst}, Fumbles Caused: {de2.FumC}, Fumbles Recovered: {de2.FumR}, Sacks: {de2.Sks}");
                         Console.WriteLine("");
                         Console.WriteLine("Enter another player (*Remember to use 'About' and 'Stats' keywords):");
                         Console.WriteLine("");
@@ -585,7 +585,7 @@ namespace TestProject1
                 else if (Question.ToLower() == "lt stats")
                 {
                     Console.WriteLine("");
-                    Console.WriteLine($" Rushing Attempts: {rb1.Rushatt}, Rushing Yards: {rb1.RushYds}, Rushing Touchdowns : {rb1.RushTDs}, Receptions: {rb1.Rec}, Fumbles: {rb1.Fmbs}, Average Fantasy Points: {rb1.FP}");
+                    Console.WriteLine($" Rushing Attempts: {rb1.Rushatt}, Rushing Yards: {rb1.RushYds}, Rushing Touchdowns: {rb1.RushTDs}, Receptions: {rb1.Rec}, Fumbles: {rb1.Fmbs}, Average Fantasy Points: {rb1.FP}");
                     Console.WriteLine("");
                     Console.WriteLine($"Would you like to see info on {rb1.Playername}?  If so, Type Yes");
                     Console.WriteLine("");
@@ -608,7 +608,7 @@ namespace TestProject1
                 else if (Question.ToLower() == "ae stats")
                 {
                     Console.WriteLine("");
-                    Console.WriteLine($" Rushing Attempts: {rb2.Rushatt}, Rushing Yards: {rb2.RushYds}, Rushing Touchdowns : {rb2.RushTDs}, Receptions: {rb2.Rec}, Fumbles: {rb2.Fmbs}, Average Fantasy Points: {rb2.FP}");
+                    Console.WriteLine($" Rushing Attempts: {rb2.Rushatt}, Rushing Yards: {rb2.RushYds}, Rushing Touchdowns: {rb2.RushTDs}, Receptions: {rb2.Rec}, Fumbles: {rb2.Fmbs}, Average Fantasy Points: {rb2.FP}");
                     Console.WriteLine("");
                     Console.WriteLine($"Would you like to see info on {rb2.Playername}?  If so, Type Yes");
                     Console.WriteLine("");
