@@ -962,7 +962,7 @@ namespace TestProject1
                 else if (Question.ToLower() == "5")
                 {
                     Console.WriteLine("");
-                    Console.WriteLine($"{qb1.Name} is the most reliable fantasy player of the chargers players. He averages {qb1.FP} fantasy points.");
+                    Console.WriteLine($"{qb1.Name} is the most reliable fantasy player out of the list. He averages {qb1.FP} fantasy points.");
                     Console.WriteLine("");
                     Console.WriteLine("Enter another number from 1-5 for more all time stats/Enter Player Name: (Type 'List' for reference).");
                     Console.WriteLine("");
